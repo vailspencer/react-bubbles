@@ -20,7 +20,7 @@ const onSubmit = (data) => {
       localStorage.setItem('token', res.data.payload);
       history.push('/bubbles');
     })
-    .cath((err) => console.error(err));
+    .catch((err) => console.error(err));
     reset();
   }, 1000);
 };
